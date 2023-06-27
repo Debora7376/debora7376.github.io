@@ -1,0 +1,61 @@
+:root {
+  --fundo: #09090B;
+  --azul-claro: #3cefff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background: var(--fundo);
+  font-family: 'Archivo', sans-serif;
+  display: grid;
+  margin-top: 1.2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.4rem;
+}
+
+.logo {
+  padding-left: 13rem;
+}
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 1rem;
+  margin-right: 2rem;
+  color: #BFBFBF;
+  font-size: 16px;
+}
+
+.inicio {
+  display: flex;
+  margin-top: 4rem;
+  justify-content: space-evenly;
+}
+
+.dev {
+  max-width: 40rem;
+}
+
+.sobre {
+  display: flex;
+  direction: row;
+  align-items: center;
+  font-weight: 600;
+}
+
+
+
