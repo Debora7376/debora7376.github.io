@@ -38,16 +38,18 @@ header {
   margin-right: 2rem;
   color: #BFBFBF;
   font-size: 16px;
+  margin-top: 1.3rem;
 }
 
 .inicio {
   display: flex;
   margin-top: 4rem;
-  justify-content: space-evenly;
+  justify-content: ;
 }
 
 .dev {
-  max-width: 40rem;
+  max-width: 30rem;
+  margin: 4rem 6rem;
 }
 
 .sobre {

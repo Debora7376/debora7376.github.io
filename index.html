@@ -7,28 +7,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="scroll.css" />
+    <link rel="stylesheet" href="menu.css" />
+
     <title>Portfólio | Débora Ferreira</title>
   </head>
   <body>
     <header>
       <img class="logo" src="img/Logo.svg" alt="Logo DevRoot">
 
-      <nav>
-        <ul class="menu">
-          <li><a href="">Ínicio</a></li>
-          <li><a href="">Quem sou</a></li>
-          <li><a href="">Serviços</a></li>
-          <li><a href="">Projetos</a></li>
-          <li><a href="">Conhecimentos</a></li>
-        </ul>
-      </nav>
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#inicio"  target="_blank">Ínicio</a></li>
+            <li><a href="./emConstrucao.html" target="_blank">Quem sou</a></li>
+            <li><a href="./emConstrucao.html" target="_blank">Serviços</a></li>
+            <li><a href="./emConstrucao.html" target="_blank">Projetos</a></li>
+            <li><a href="./emConstrucao.html" target="_blank">Conhecimentos</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu-bg" id="menu-bg"></div>
+
     </header>
     <hr size="0.1rem" color="#1C1852" />
 
     <main>
       <section class="inicio">
-        <div class="sobre">
+        <div id="inicio" class="sobre">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br /> 
@@ -39,8 +53,16 @@
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
           </p>
         </div>
-        <img class="dev" src="./img/imagemdev.svg" alt="Imagem principal" />
+        <img class="dev" src="./img/dev.svg" alt="Imagem principal" />
       </section>
     </main>
+
+    <script>
+      function menuOnClick() {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("nav").classList.toggle("change");
+        document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+    </script>
   </body>
 </html>
